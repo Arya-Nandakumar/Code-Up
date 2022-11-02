@@ -30,7 +30,7 @@ body {
 
 .hero-section {
 opacity: 1;
-background-image: url(assets/sand.jpg);
+background-image: url('https://raw.githubusercontent.com/Arya-Nandakumar/Code-Up/main/assets/sand.jpg');
   position: relative;
 }
 
