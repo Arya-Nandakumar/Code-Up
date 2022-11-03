@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
+:root{
+  --dark-color: hsl(0,0%,0%);
+  --gray-color: hsl(0,0%,60%);
+  --light-color: hsl(0,0%,100%);
+}
+*{
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: black;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.section{
+  border: 2px white solid;
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .section p{
+    font-size: 95%;
+  }
+
+  .text-container{
+    color: #ffffff;
+    text-align: center;
+    width: 70%;
+  }
+
+  .hero-head header {
+    padding-top: 10px;
+    height: 75px;
+  }
+  .hero-head header .navbar-item img {
+    height: 75px;
+    max-height: none;
+  }
+  .hero-head header .navbar-item .is-primary {
+    border-color: white !important;
+    color: white !important;
+  }
+  .hero-head header .navbar-item .is-primary:hover {
+    background: rgba(0, 0, 0, 0) !important;
+    border-color: white !important;
+    color: white !important;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .hero-body .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300 !important;
+    font-size: 4rem !important;
+    letter-spacing: 15px;
+    color: #ffffff !important;
+  }
+  .hero-body .subtitle .countdown {
+    color: #ffffff;
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 15px;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+  }
+  
+  .hero-foot {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .hero-foot ul li {
+    display: inline;
+    padding: 25px;
+  }
+  .hero-foot a {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+  }
+  
+  /* -------------------- */
+  /* -- Animations CSS -- */
+  /* -------------------- */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      opacity: 1\9 ;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fade {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+  }
+  
+  .fade.fadeOne {
+    animation-delay: 0.3s;
+  }
+  
+  .fade.fadeTwo {
+    animation-delay: 0.4s;
+  }
+  
+  .fade.fadeThree {
+    animation-delay: 0.7s;
+  }
+  .fade.fadeThree span {
+    font-size: 0.8rem;
+  }
