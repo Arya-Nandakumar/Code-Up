@@ -1,0 +1,42 @@
+@media screen and (max-width: 854px) {
+  .text-img {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border: 2px violet solid;
+    align-items: center;
+  }
+
+  .text-container {
+    text-align: center;
+    height: 60%;
+    width: 100%;
+    max-height: 60%;
+  }
+
+  .text-container p {
+    line-height: 1.8;
+    font-size: 1.5vh;
+  }
+
+  .text-container2 p {
+    line-height: 1.8;
+    font-size: 1.5vh;
+  }
+
+  .img-container {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    height: 40%;
+    width: 90%;
+    border: 2px yellow solid;
+  }
+
+  .img-container img {
+    width: auto;
+    max-height: 100%;
+  }
+}

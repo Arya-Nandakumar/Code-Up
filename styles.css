@@ -1,191 +1,217 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
-:root{
-  --dark-color: hsl(0,0%,0%);
-  --gray-color: hsl(0,0%,60%);
-  --light-color: hsl(0,0%,100%);
-}
-*{
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap");
+* {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
   font-family: "Montserrat", sans-serif;
-  line-height: 1;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  background: #0f1523;
+  color: white;
+  opacity: 1.2;
+  background-image: linear-gradient(#141d31 1px, transparent 1px),
+    linear-gradient(to right, #162036 1px, #0f1523 1px);
+  background-size: 60px 60px;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-body{
-  background: #0f1523;
-  color: white;
-  border: 7px white solid;
-  opacity: 1.2;
-  background-image:  linear-gradient(#141d31 1px, transparent 1px), linear-gradient(to right, #162036 1px, #0f1523 1px);
-  background-size: 60px 60px;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
+.nav {
+  height: 50px;
   width: 100%;
-  background-color: #f1f1f1;
+  position: absolute;
 }
 
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+body {
+  margin-bottom: 50px;
+}
+
+.bottom-bar {
+  border-top: 2px grey solid;
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-bar__text {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+.bottom-bar__text a {
+  color: #efefef;
+  display: inline;
+  float: right;
+  font-size: 18px;
+  text-decoration: none;
+}
 
 .progress-container {
+  position: fixed;
   width: 100%;
-  height: 8px;
+  height: 2px;
   background: white;
 }
 
 .progress-bar {
   height: 8px;
-  background: #FEB902;
+  background: #feb902;
   width: 0%;
 }
 
-.image-container{
-  height: 100%;
+.text-img {
+  padding: 20px;
   display: flex;
   justify-content: center;
+  height: 100%;
+  width: 100%;
   align-items: center;
 }
 
-.image-container img{
-  height: 60%;
-  width: auto;
+.text-container {
+  color: #ffffff;
+  text-align: center;
+  width: 60%;
 }
 
-
-.section{
-    width: 100%;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border-bottom: 7px white solid;
-  }
-  
-  .section p{
-    font-size: 1.2vw;
-  }
-
-  .title1
-  {
-    padding: 20px;
-    color: white;
-    font-size: 2.5vw;
-    font-weight: 600;
-    line-height: 1.125;
-  }
-
-  .text-container{
-    color: #ffffff;
-    text-align: center;
-    width: 70%;
-    padding: 50px;
-  }
-
-  .text-container p{
-    line-height: 1.0rem;
-  }
-
-.obj{
-  text-align: left;
+.text-container p {
+  line-height: 1.8;
+  font-size: 2vh;
 }
 
-  .hero-head header {
-    padding-top: 10px;
-    height: 75px;
-  }
-  .hero-head header .navbar-item img {
-    height: 75px;
-    max-height: none;
+.text-container2 {
+  color: #ffffff;
+  text-align: center;
+  width: 90%;
+  padding: 50px;
+  line-height: 1.8;
+  max-height: 100%;
+}
 
-  }
-  .hero-head header .navbar-item .is-primary {
-    border-color: white !important;
-    color: white !important;
-  }
-  .hero-head header .navbar-item .is-primary:hover {
-    background: rgba(0, 0, 0, 0) !important;
-    border-color: white !important;
-    color: white !important;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .hero-body .title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300 !important;
-    font-size: 4rem !important;
-    letter-spacing: 15px;
-    color: #feb470 !important;
-  }
-  .hero-body .subtitle .countdown {
-    color: #ffffff;
-    font-family: "Roboto Mono", sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding-top: 15px;
-    letter-spacing: 2px;
-    font-size: 2.5rem;
-  }
-  
-  .hero-foot {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-  .hero-foot ul li {
-    display: inline;
-    padding: 25px;
-  }
-  .hero-foot a {
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.7rem;
-  }
-  
-  /* -------------------- */
-  /* -- Animations CSS -- */
-  /* -------------------- */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      opacity: 1\9 ;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  .fade {
+.text-container2 p {
+  line-height: 2;
+  font-size: 2vh;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  width: 40%;
+  height: 100%;
+  padding: 50px;
+}
+
+.img-container img {
+  height: auto;
+  max-width: 100%;
+}
+
+.title1 {
+  color: white;
+  font-size: 2.5vw;
+}
+
+.section {
+  border: 2px white solid;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    animation: fadeIn ease-in 1;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
+    opacity: 1\9;
   }
-  
-  .fade.fadeOne {
-    animation-delay: 0.3s;
+  to {
+    opacity: 1;
   }
-  
-  .fade.fadeTwo {
-    animation-delay: 1.2s;
-  }
-  
-  .fade.fadeThree {
-    animation-delay: 0.7s;
-  }
-  .fade.fadeThree span {
-    font-size: 0.8rem;
-  }
+}
+.fade {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+
+.fade.fadeOne {
+  animation-delay: 0.3s;
+}
+
+.fade.fadeTwo {
+  animation-delay: 0.7s;
+}
+
+.fade.fadeThree {
+  animation-delay: 1.2s;
+}
+.fade.fadeThree span {
+  font-size: 0.8rem;
+}
