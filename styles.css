@@ -214,12 +214,12 @@ body {
 
 .fade.fadeTwo {
   animation-delay: 0.7s;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .fade.fadeThree {
   animation-delay: 1.2s;
-  font-size: 40px;
+  font-size: 35px;
 }
 .fade.fadeThree span {
   font-size: 0.8rem;
