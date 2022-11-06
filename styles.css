@@ -21,6 +21,9 @@ body{
   background: #0f1523;
   color: white;
   border: 7px white solid;
+  opacity: 1.2;
+  background-image:  linear-gradient(#141d31 1px, transparent 1px), linear-gradient(to right, #162036 1px, #0f1523 1px);
+  background-size: 60px 60px;
 }
 
 .header {
@@ -93,7 +96,7 @@ body{
   }
 
   .text-container p{
-    line-height: 15px;
+    line-height: 1.0rem;
   }
 
 .obj{
@@ -125,7 +128,7 @@ body{
     font-weight: 300 !important;
     font-size: 4rem !important;
     letter-spacing: 15px;
-    color: #ffffff !important;
+    color: #feb470 !important;
   }
   .hero-body .subtitle .countdown {
     color: #ffffff;
