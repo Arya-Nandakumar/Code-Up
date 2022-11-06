@@ -18,7 +18,7 @@ html {
 }
 
 body{
-  background: black;
+  background: #0f1523;
   color: white;
   border: 7px white solid;
 }
@@ -92,6 +92,14 @@ body{
     padding: 50px;
   }
 
+  .text-container p{
+    line-height: 15px;
+  }
+
+.obj{
+  text-align: left;
+}
+
   .hero-head header {
     padding-top: 10px;
     height: 75px;
@@ -99,6 +107,7 @@ body{
   .hero-head header .navbar-item img {
     height: 75px;
     max-height: none;
+
   }
   .hero-head header .navbar-item .is-primary {
     border-color: white !important;
@@ -168,7 +177,7 @@ body{
   }
   
   .fade.fadeTwo {
-    animation-delay: 0.4s;
+    animation-delay: 1.2s;
   }
   
   .fade.fadeThree {
