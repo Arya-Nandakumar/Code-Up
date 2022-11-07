@@ -22,7 +22,7 @@ html {
   padding: 15px;
 }
 .nav-links a{
-  padding: 15px;
+  padding: 20px;
 }
 
 .nav {
@@ -210,16 +210,19 @@ body {
   animation-delay: 0.3s;
   color: #feb470;
   font-size: 70px;
+  text-align: center;
 }
 
 .fade.fadeTwo {
   animation-delay: 0.7s;
-  font-size: 35px;
+  font-size: 40px;
+  text-align: center;
 }
 
 .fade.fadeThree {
   animation-delay: 1.2s;
-  font-size: 35px;
+  font-size: 40px;
+  text-align: center;
 }
 .fade.fadeThree span {
   font-size: 0.8rem;
