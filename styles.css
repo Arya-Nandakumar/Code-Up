@@ -148,7 +148,7 @@ body {
 
 .text-container2 p {
   line-height: 2;
-  font-size: 1.3vw;
+  font-size: 1.3v;
 }
 
 .title{
@@ -219,21 +219,21 @@ body {
   color: #feb470;
   font-size: 70px;
   text-align: center;
-  font-size: 6vh;
+  font-size: 5vw;
 }
 
 .fade.fadeTwo {
   animation-delay: 0.7s;
   font-size: 40px;
   text-align: center;
-  font-size: 3vh;
+  font-size: 2vw;
 }
 
 .fade.fadeThree {
   animation-delay: 1.2s;
   font-size: 40px;
   text-align: center;
-  font-size: 4vh;
+  font-size: 2vw;
 }
 .fade.fadeThree span {
   font-size: 0.8rem;

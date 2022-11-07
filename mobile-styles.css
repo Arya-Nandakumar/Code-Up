@@ -47,4 +47,16 @@
     width: auto;
     max-height: 100%;
   }
+
+  .fade.fadeOne {
+    font-size: 11vw;
+  }
+  
+  .fade.fadeTwo {
+    font-size: 5vw;
+  }
+  
+  .fade.fadeThree {
+    font-size: 5vw;
+  }
 }
