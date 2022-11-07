@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 700px) {
   .text-img {
     display: flex;
     flex-direction: column-reverse;
@@ -18,13 +18,22 @@
 
   .text-container p {
     line-height: 1.8;
-    font-size: 1.3vh;
+    font-size: 2.5vw;
   }
 
   .text-container2 p {
     line-height: 1.8;
-    font-size: 1.3vh;
+    font-size: 2.5vw;
   }
+
+  .title{
+    font-size: 3vw;
+  }
+  
+  .title1{
+    font-size: 3vw;
+  }
+  
 
   .img-container {
     display: flex;
